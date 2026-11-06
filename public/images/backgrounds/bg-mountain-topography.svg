@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <linearGradient id="mountGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#0ea5e9" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#mountGrad)"/>
+  <!-- Topographic Elevation Contours (Sri Lanka Highlands) -->
+  <path d="M-50 180 Q 250 80, 550 190 T 1150 150 T 1500 210" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.25" fill="none"/>
+  <path d="M-50 260 Q 300 160, 600 270 T 1200 230 T 1500 290" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.20" fill="none"/>
+  <path d="M-50 340 Q 350 240, 650 350 T 1250 310 T 1500 370" stroke="#0ea5e9" stroke-width="1.2" stroke-opacity="0.18" fill="none"/>
+  <path d="M-50 420 Q 400 320, 700 430 T 1300 390 T 1500 450" stroke="#0ea5e9" stroke-width="1.0" stroke-opacity="0.15" fill="none"/>
+  <path d="M-50 510 Q 450 410, 750 520 T 1350 480 T 1500 540" stroke="#10b981" stroke-width="1.0" stroke-opacity="0.15" fill="none"/>
+  <path d="M-50 600 Q 500 500, 800 610 T 1400 570 T 1500 630" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.12" fill="none"/>
+  <!-- Geodetic Triangulation Baseline -->
+  <line x1="300" y1="210" x2="850" y2="400" stroke="#0284c7" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="6 4"/>
+  <circle cx="300" cy="210" r="4" fill="#0284c7" fill-opacity="0.4"/>
+  <circle cx="850" cy="400" r="4" fill="#0284c7" fill-opacity="0.4"/>
+  <text x="315" y="215" font-family="monospace" font-size="11" fill="#0284c7" fill-opacity="0.4">GNSS REF BASE</text>
+  <text x="865" y="405" font-family="monospace" font-size="11" fill="#0284c7" fill-opacity="0.4">GNSS ROVER 1</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <pattern id="fineGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0284c7" stroke-width="0.5" stroke-opacity="0.10"/>
+    </pattern>
+    <pattern id="majorGrid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#0284c7" stroke-width="1.0" stroke-opacity="0.18"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="900" fill="#f8fafc"/>
+  <rect width="1440" height="900" fill="url(#fineGrid)"/>
+  <rect width="1440" height="900" fill="url(#majorGrid)"/>
+  <!-- Structural Dimensioning Lines -->
+  <line x1="200" y1="200" x2="1200" y2="200" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.25"/>
+  <line x1="200" y1="190" x2="200" y2="210" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="1200" y1="190" x2="1200" y2="210" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="680" y="190" font-family="monospace" font-size="11" fill="#0284c7" fill-opacity="0.4" text-anchor="middle">15.0 km LoRa LINK BUDGET RADIUS</text>
+</svg>

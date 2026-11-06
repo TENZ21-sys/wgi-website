@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <linearGradient id="gradDam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.08"/>
+    </linearGradient>
+    <pattern id="damGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#0284c7" stroke-width="0.75" stroke-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="900" fill="url(#gradDam)"/>
+  <rect width="1440" height="900" fill="url(#damGrid)"/>
+  <!-- Dam Crest & Reservoir Elevation Contours -->
+  <path d="M-100 250 C 300 200, 600 350, 1540 220" stroke="#0284c7" stroke-width="2" stroke-opacity="0.25" fill="none"/>
+  <path d="M-100 320 C 350 280, 700 420, 1540 300" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.2" fill="none"/>
+  <path d="M-100 400 C 400 380, 800 500, 1540 380" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.15" fill="none"/>
+  <path d="M-100 500 C 450 480, 900 600, 1540 470" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.1" fill="none"/>
+  <!-- Structural Anchoring Nodes -->
+  <circle cx="280" cy="225" r="5" fill="#0284c7" fill-opacity="0.3"/>
+  <circle cx="580" cy="340" r="5" fill="#0284c7" fill-opacity="0.3"/>
+  <circle cx="880" cy="280" r="5" fill="#0ea5e9" fill-opacity="0.3"/>
+  <circle cx="1180" cy="245" r="5" fill="#0284c7" fill-opacity="0.3"/>
+</svg>

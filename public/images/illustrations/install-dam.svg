@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="damConcrete" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Sky -->
+  <rect width="800" height="480" fill="#f0f9ff" rx="16"/>
+
+  <!-- Reservoir Water Mass (Upstream Left) -->
+  <polygon points="0,150 280,150 280,480 0,480" fill="url(#waterGrad)"/>
+  <path d="M 0 150 Q 70 145 140 150 T 280 150" stroke="#bae6fd" stroke-width="2" fill="none"/>
+  <text x="40" y="240" font-family="system-ui, sans-serif" font-size="14" font-weight="black" fill="#ffffff">RESERVOIR WATER</text>
+  <text x="40" y="260" font-family="system-ui, sans-serif" font-size="11" fill="#e0f2fe">Millions of cubic meters</text>
+
+  <!-- Hydrostatic Pressure Force Vectors -->
+  <g transform="translate(180, 280)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#ffffff" stroke-width="3"/>
+    <polygon points="60,0 50,-5 50,5" fill="#ffffff"/>
+    <line x1="0" y1="50" x2="80" y2="50" stroke="#ffffff" stroke-width="4"/>
+    <polygon points="80,50 70,-5 70,5" fill="#ffffff" transform="translate(0, 50)"/>
+    <line x1="0" y1="100" x2="95" y2="100" stroke="#ffffff" stroke-width="5"/>
+    <polygon points="95,100 85,-5 85,5" fill="#ffffff" transform="translate(0, 100)"/>
+    <text x="-40" y="-15" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Hydrostatic Thrust</text>
+  </g>
+
+  <!-- Massive Concrete Dam Cross-Section -->
+  <polygon points="280,110 360,110 680,480 280,480" fill="url(#damConcrete)" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Foundation Bedrock Under Dam -->
+  <polygon points="0,480 800,480 800,440 280,440 0,440" fill="#334155" opacity="0.4"/>
+  <text x="400" y="465" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b">DEEP FOUNDATION BEDROCK GROUT CURTAIN</text>
+
+  <!-- Dam Crest GNSS Station (Top of Dam) -->
+  <g transform="translate(320, 45)">
+    <!-- Survey Pier -->
+    <rect x="0" y="40" width="20" height="25" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <!-- Leveling Base & Conical Antenna -->
+    <rect x="-3" y="36" width="26" height="5" fill="#0369a1" rx="1"/>
+    <path d="M 0 36 L 10 15 L 20 36 Z" fill="#0284c7"/>
+    <!-- 3D Movement Arrows (X, Y, Z Millimeters) -->
+    <line x1="10" y1="15" x2="10" y2="-5" stroke="#ef4444" stroke-width="2"/>
+    <polygon points="10,-5 7,2 13,2" fill="#ef4444"/>
+    <line x1="10" y1="15" x2="30" y2="15" stroke="#10b981" stroke-width="2"/>
+    <polygon points="30,15 23,12 23,18" fill="#10b981"/>
+    <!-- Callout Box -->
+    <rect x="-140" y="-45" width="170" height="42" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="-130" y="-30" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">1. DAM CREST 3D GNSS</text>
+    <text x="-130" y="-17" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Measures 1mm crest movement</text>
+    <text x="-130" y="-6" font-family="system-ui, sans-serif" font-size="8" fill="#ef4444">● Seasonal expansion &amp; settlement</text>
+  </g>
+
+  <!-- Dam Face Tiltmeters (Tracking Monolith Rotation) -->
+  <g transform="translate(430, 220)">
+    <rect x="0" y="0" width="30" height="20" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" transform="rotate(-40)"/>
+    <!-- Angle Arc -->
+    <path d="M 40 -10 A 30 30 0 0 1 50 30" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <!-- Callout Box -->
+    <rect x="50" y="-35" width="160" height="42" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="60" y="-20" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">2. WALL TILTMETERS</text>
+    <text x="60" y="-7" font-family="system-ui, sans-serif" font-size="9" fill="#475569">0.0001° structural tilt</text>
+    <text x="60" y="4" font-family="system-ui, sans-serif" font-size="8" fill="#10b981">● Water thrust deflection angle</text>
+  </g>
+
+  <!-- Downstream Control Room Telemetry Link -->
+  <g transform="translate(680, 280)">
+    <rect x="0" y="50" width="80" height="60" rx="6" fill="#1e293b"/>
+    <rect x="15" y="65" width="20" height="15" fill="#38bdf8" rx="2"/>
+    <rect x="45" y="65" width="20" height="15" fill="#38bdf8" rx="2"/>
+    <line x1="40" y1="50" x2="40" y2="20" stroke="#10b981" stroke-width="2.5"/>
+    <circle cx="40" cy="20" r="4" fill="#10b981"/>
+    <!-- Radio Waves -->
+    <path d="M 30 15 A 15 15 0 0 0 30 30" stroke="#10b981" stroke-width="2" fill="none"/>
+    <rect x="-40" y="-25" width="140" height="36" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+    <text x="-32" y="-12" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#047857">3. 24/7 SCADA LINK</text>
+    <text x="-32" y="1" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Live CEB/Mahaweli alerts</text>
+  </g>
+
+  <!-- Top Ribbon -->
+  <g transform="translate(20, 20)">
+    <rect width="320" height="42" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
+    <circle cx="22" cy="21" r="10" fill="#ecfdf5"/>
+    <path d="M 18 21 L 21 24 L 27 18" stroke="#10b981" stroke-width="2" fill="none"/>
+    <text x="40" y="17" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Catastrophic Risk Elimination</text>
+    <text x="40" y="32" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Millimeter crest safety tracking under monsoon floods</text>
+  </g>
+</svg>
